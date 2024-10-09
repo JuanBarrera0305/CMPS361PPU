@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f5f5f5;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+    color: #333;
+    cursor: pointer;
+}
+
+th a {
+    color: #333;
+    text-decoration: none;
+}
+
+th a:hover {
+    color: #007bff; /* Highlight on hover */
+}
+
+/* Alternating Row Colors */
+tbody tr:nth-child(odd) {
+    background-color: #e3f2fd; /* Light blue */
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9fbe7; /* Light greenish yellow */
+}
+
+/* Hover Effect */
+tbody tr:hover {
+    background-color: #ffe082; /* Light yellow on hover */
+}
+
+/* Pagination Styles */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination a {
+    margin: 0 5px;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.pagination a:hover {
+    background-color: #0056b3;
+}
+
+.pagination strong {
+    margin: 0 5px;
+    padding: 8px 16px;
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Search Bar Styles */
+.search-container {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.search-container label {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.search-container input[type="text"] {
+    padding: 10px;
+    width: 250px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.search-container input[type="text"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    table, th, td {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .search-container input[type="text"] {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .pagination a, .pagination strong {
+        padding: 6px 12px;
+    }
+}
